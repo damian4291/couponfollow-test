@@ -32,7 +32,7 @@ function get(url: string, { body, ...restOptions }: RequestInit = {}): Promise<a
 }
 
 function post(url: string, options: RequestInit = {}): Promise<any> {
-  return request(url, { method: 'GET', ...options })
+  return request(url, { method: 'POST', ...options })
 }
 
 const methods = { get, post }
